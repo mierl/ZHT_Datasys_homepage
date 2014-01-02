@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" ><!-- #BeginTemplate "../../master.dwt" --><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>DataSys: Projects</title>
+<style type="text/css" >
+.style5 {
+	font-size:small;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+</style>
+<!-- #EndEditable -->
+<link href="../../styles/style2.css" rel="stylesheet" type="text/css" />
+<style type="text/css" >
+.style1 {
+	color:#3D6C87;
+}
+
+.style2 {
+	font-size:large;
+}
+
+.style3 {
+	font-size:22pt;
+}
+
+.auto-style1 {
+	font-size:9pt;
+}
+
+</style>
+<script type="text/javascript" >
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1237893-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body style="" >
+
+<!-- Begin Container -->
+<div id="container" style="width:1000px; height:650px; " >
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<h1 class="style3" >
+		<img alt="DataSys: Data-Intensive Distributed Systems Laboratory" height="100" src="../../images/datasys-logo.jpg" style="float:left; " width="200" />Data-Intensive Distributed Systems Laboratory</h1>
+		<h3 class="style1" ><a href="http://www.iit.edu/" target="_blank" >Illinois Institute of Technology</a><br/>
+		<a href="http://www.iit.edu/csl/cs/" target="_blank" >Department of Computer Science</a> </h3>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation" class="style2" >
+		<ul style="width:135%; " >
+			<li><a href="../../index.html" >Home</a></li>
+			<li><a href="../../news/index.html" >News</a></li>
+			<li><a href="../index.html" >Projects</a></li>
+			<li><a href="../../people/index.html" >People</a></li>
+			<li><a href="../../publications/index.html" >Publications</a></li>
+			<li><a href="../../dissertations/index.html" >Theses &amp; Dissertations</a></li>
+			<li><a href="../../events/index.html" >Events</a></li>
+			<li><a href="../../seminar/index.html" >CS Seminar</a></li>
+			<li><a href="../../ds-seminar/index.html" >DataSys Seminar</a></li>
+			<li><a href="../../calendar/index.html" >Conference Calendar</a></li>
+			<li><a href="../../courses/index.html" >Courses</a></li>
+			<li><a href="../../links/index.html" >Links</a></li>
+			<li><a href="../../contact/index.html" >Contact</a></li>
+			<li><a href="../../mailing-list/index.html" >Mailing List</a></li>
+			<li><a href="../../wiki/index.php" >Wiki</a></li>
+		</ul>
+	</div>
+	<!-- End Navigation -->
+	<!-- Begin Content -->
+	<div id="content" >
+		<!-- #BeginEditable "content" -->
+		<h2>ZHT: a zero-hop distributed hashtable</h2>
+		<p>ZHT is a zero-hop distributed hash table, which has been tuned for the
+specific requirements of high performance computing (e.g.
+trustworthy/reliable hardware, fast networks, non-existent “churn”, low
+latencies, and scientific computing data-access patterns). ZHT aims to be a
+building block for future distributed systems, with the goal of delivering
+excellent availability, fault tolerance, high throughput, scalability,
+persistence, and low latencies. ZHT has several important features making it
+a better candidate than other distributed hash tables and key-value stores,
+such as being light-weight, dynamically allowing nodes join and leave, fault
+tolerant through replication and by handling failures gracefully and efficiently
+propagating events throughout the system, a customizable consistent
+hashing function, supporting persistence for better recoverability in case of
+faults, scalable, and supporting unconventional operations such as append
+(providing lock-free concurrent key/value modifications) in addition to
+insert/lookup/remove. To provide ZHT a persistent back end, we also created
+a fast persistent key-value store that could be easily integrated and operated
+in lightweight Linux OS typically found on today’s supercomputers.  
+
+
+ </p>
+		<ul>
+			<li>
+			<p class="style5" ><strong>Period: </strong>03/2010 - Present</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Web Site: </strong>
+			<a href="http://datasys.cs.iit.edu/projects/ZHT/" >http://datasys.cs.iit.edu/projects/ZHT/</a>&nbsp; </p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Languages: </strong>C/C++</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Features: </strong>Event-driven model, epoll, TCP, UDP, Threads</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Technologies: </strong>TBA</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>OS: </strong>Linux</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Testbeds: </strong>Linux cluster, SiCortex 
+			SC5832 supercomputer, BlueGene/P supercomputer, Amazon EC2 Cloud</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Scalability: </strong>Up to 32768 instances on BlueGene/P</p>
+			</li>
+			<li>
+			<p class="style5" ><strong>Throughput: </strong>18M ops/sec (tested on BlueGene/P with 32768 cores)</p>
+			</li>
+			<li>
+                        <p class="style5" ><strong>Publication: </strong>Tonglin Li, Xiaobing Zhou, Kevin Brandstatter, Dongfang Zhao, 
+Ke Wang, Anupam Rajendran, Zhao Zhang, Ioan Raicu, ZHT: A Light-weight Reliable Persistent Dynamic Scalable Zero-hop Distributed Hash Table, 27th IEEE International Parallel &amp; Distributed Processing Symposium (IPDPS), 2013.</p>
+(<a href="ZHT-CRC-PID2666213-Final.pdf" >PDF</a>, <a href="001-Public--ZHT-05-22-2013-IPDPS.pptx" >Slides</a>)
+                        </li>		
+			<li>
+                        <p class="style5" ><strong>Source code: </strong>
+                        <a href="https://github.com/mierl/ZHT " >https://github.com/mierl/ZHT</a>&nbsp; </p>
+                        </li>
+	
+			<li>
+			<p class="style5" ><strong>Funding: </strong>NSF OCI<br/><br/></p><h3></h3><h3>Architecture comparison</h3><img src="PastedObjects/dht_comparison-1.png" alt="" style="width:695px; height:219px; " /></li><li><h3>Performance comparison</h3></li><li><img src="PastedObjects/BGP_latency.png" alt="" style="height:379px; width:693px; " <="" body="" /></li><li>New Item</li><li>New Item</li><li><br/></li>
+		</ul>&lt;new text&gt;</div>
+	<!-- End Content -->
+	<!-- Begin Footer -->
+	<div id="footer" >
+		<p><a href="../../index.html" ><span class="auto-style1" >Home</span></a><span class="auto-style1" > | 
+		<a href="../../news/index.html" >News</a> | <a href="../index.html" >Projects</a> | 
+		<a href="../../people/index.html" >People</a> | 
+		<a href="../../publications/index.html" >Publications</a> | 
+		<a href="../../dissertations/index.html" >Dissertations</a> | 
+		<a href="../../events/index.html" >Events</a> | 
+		<a href="../../seminar/index.html" >CS Seminar</a> |
+		<a href="../../ds-seminar/index.html" >DataSys Seminar</a> | 
+		<a href="../../calendar/index.html" >Calendar</a> | 
+		<a href="../../courses/index.html" >Courses</a> |
+		<a href="../../links/index.html" >Links</a> | 
+		<a href="../../contact/index.html" >Contact</a> | </span> 
+		<a href="../../wiki/index.php" >
+		<span class="auto-style1" >Wiki</span></a></p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+
+
+<!-- #EndTemplate -->
+
+
+</body></html>
